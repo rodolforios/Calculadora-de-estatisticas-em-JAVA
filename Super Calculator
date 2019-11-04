@@ -1,0 +1,225 @@
+import java.util.Scanner;
+public class Metodos {
+	
+	Scanner in = new Scanner (System.in);
+    
+	   public void mediaAritmetica(){
+	       
+		       
+		        
+		        int totalAmostras;
+		        float soma1;
+		        float soma2 =0;    
+		        float media;
+		        String sair = "";
+		        
+		        while(!sair.contentEquals("b")) {
+		        System.out.println("-----Média Aritmética-----");
+		        System.out.println("Quantos amostras possui o seu rol? ");
+		        totalAmostras = in.nextInt();
+		        
+		        while ( totalAmostras > 100 || totalAmostras < 1){
+		            System.out.println("O máximo de amostras permitidas é de 100! ");
+		             System.out.println("Quantos amostras possui o seu rol? ");
+		        totalAmostras = in.nextInt();
+		                    
+		        }
+		        
+		       
+		        for (int i = totalAmostras; i > 0;i--){
+		            
+		        System.out.println("Digite um valor");
+		        soma1 = in.nextFloat();
+		        soma2 = (soma1 + soma2);
+		        
+		       
+		        }
+		        
+		        media = (soma2/ totalAmostras);
+		        
+		          System.out.println("A média aritmética é "+ media); 
+		          System.out.println("----------");
+		          System.out.println("Digite [B] para sair ou [C] para continuar");
+		          sair = in.next();
+		        
+		        
+		        }
+		        }
+		        
+		        
+		      
+	    
+	   public void mediaPonderada(){
+	      
+	       
+	       double ap1,ap2,ap3,soma;
+	       String sair = "";
+	        
+	        while(!sair.contentEquals("b")) {
+	       
+	       System.out.println("-----Média Ponderada-----");
+	       System.out.println("Digite a primeira nota");
+	       ap1 = in.nextDouble();
+	       
+	       System.out.println("Digite a segunda nota");
+	       ap2 = in.nextDouble();
+	       
+	       System.out.println("Digite a terceira nota");
+	       ap3 = in.nextDouble();
+	       
+	       soma = ((ap1 * 0.20)+(ap2 * 0.30)+(ap3* 0.50 ));
+	       
+	       System.out.println("Sua média é "+soma);
+	       System.out.println("----------");
+	       System.out.println("Digite [B] para sair ou [C] para continuar");
+	       sair = in.next();
+	   }
+	   }
+	   
+	   
+	   public void mediana(){
+	       
+		   String sair = "";
+	        
+	        while(!sair.contentEquals("b")) {
+	        
+		   System.out.println("-----Mediana-----");
+	       System.out.println("Quantas amostras possui o seu rol: ");
+	       int totalAmostras = in.nextInt();
+	       int[] arr = new int[totalAmostras];
+	       
+	       for(int i = 0; i < totalAmostras; i++) {
+	           System.out.println("Digite um número: ");
+	        arr[i] = in.nextInt();
+	       
+	       }
+	       if(totalAmostras % 2 == 1){
+	           int soma = (totalAmostras)/2;
+	           System.out.println(arr[soma]);
+	                     
+	           
+	       }else{ 
+	           float soma = arr[(totalAmostras/2)-1] + arr[(totalAmostras/2)];
+	           System.out.println("A mediana das amostras inseridas é " + soma/2);
+	           System.out.println("----------");
+	           
+	        }
+	       System.out.println("Digite [B] para sair ou [C] para continuar");
+	       sair = in.next();
+	        }
+	}
+
+
+
+	       public void amplitude(){
+	    	   String sair = "";
+	    	   System.out.println("-----Amplitude-----");
+	    	   
+		        
+		        while(!sair.contentEquals("b")) {
+		        	
+		        
+	           System.out.println("Quantas amostras possui o seu rol: ");
+	       int totalAmostras = in.nextInt();
+	       int[] arr = new int[totalAmostras];
+	       
+	       for(int i = 0; i < totalAmostras; i++) {
+	           System.out.println("Digite um número: ");
+	        arr[i] = in.nextInt();
+	          
+	           
+	       }
+	       int sub= arr[totalAmostras -1] - arr[0];
+	       System.out.println("A amplitude é: "+ sub);
+	       System.out.println("----------");
+	       System.out.println("Digite [B] para sair ou [C] para continuar");
+	       sair = in.next();
+		        }
+	   }
+	       
+	       public void variancia(){
+	    	   Scanner in = new Scanner (System.in);
+	           
+	    	    System.out.println("-----Variância-----");
+	    		    	   String sair = "";
+	    			       
+	    		    	   while(!sair.contentEquals("b")) {
+	    		           System.out.println("Quantas amostras possui o seu rol: ");
+	    		       int totalAmostras = in.nextInt();
+	    		       int[] arr = new int[totalAmostras];
+	    		       double s = 0;
+	    		       int n = 0;
+	    		       int soma = 0;
+	    	               double resultado=0;
+	    		       
+	    		       
+	    		       for(int i = 0; i < totalAmostras; i++) {
+	    		           System.out.println("Digite um número: ");
+	    		        arr[i] = in.nextInt();
+	    		       
+	    	                
+	    	            }
+	    	               for(int i = 0; i < totalAmostras; i++) {
+	    		         soma = arr[i] + soma; 
+	    		       }
+	    		        n = (soma/totalAmostras);
+	    		       
+	    		       for (int i =0;i < totalAmostras; i++) {
+	    		    	   s = (arr[i]-n);
+	    	                   resultado += (s*s);
+	    	                   
+	    		       }
+	    	                       
+	    	                               
+	    	               
+	    		       System.out.println("A variância é "+ resultado/(totalAmostras -1));
+	    		        
+	    		       System.out.println("----------");
+	    		       
+	    		       System.out.println("Digite [B] para sair ou [C] para continuar");
+	    		       sair = in.next(); 
+	    		    	   }
+	       }
+	       
+
+
+
+	       public void hisFacul(){
+	           System.out.println("blablabla");
+	           System.out.println("----------");
+	                   
+	           
+	       }
+	       public void hisalunos(){
+	    	   
+	    	   String sair = "";
+	    	   while(!sair.contentEquals("b")) {
+	    		   
+	    	   
+	    	   System.out.println("-----Créditos-----");
+	           System.out.println("Rodolfo Rios RA: 1911515493");
+	           System.out.println("------------");	           
+	           System.out.println("Yasmim jaciara Teixeira Da Silva RA: 1911515487");
+	           System.out.println("------------");
+	           System.out.println("Felipe Silva do Carmo RA 1911514577");
+	           System.out.println("------------");
+	           System.out.println("Edmarcio Felipe Freitas Ribeiro RA 1911515398");
+	           System.out.println("------------");
+	           System.out.println("Felipe Alexandre Gonçales Cunha RA 1911514582");
+	           System.out.println("------------");
+	           System.out.println("Luiz Felipe Carvalho Caumo RA 1911514164");
+	           System.out.println("------------");
+	           System.out.println("Alexandre Felipe Massouh RA 1911513996");
+	           System.out.println("------------");
+	           System.out.println("Uliana Mavignier Paiva RA 1911514043");
+	           System.out.println("------------");
+	           System.out.println("Digite [B] para sair   ");
+		       sair = in.next();
+	           
+	                
+	    	   }
+	}
+
+
+
+	}
