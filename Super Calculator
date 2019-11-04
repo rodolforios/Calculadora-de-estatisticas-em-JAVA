@@ -185,9 +185,18 @@ public class Metodos {
 
 
 	       public void hisFacul(){
-	           System.out.println("blablabla");
-	           System.out.println("----------");
-	                   
+	    	   String sair = "";
+	    	   while(!sair.contentEquals("b")) {
+	           System.out.println("Dia 31 de Dezembro de 2002 foi fundada por Eduardo José Pereira Coelho a Faculdade Integrada Metropolitana de Campinas (METROCAMP) \r\n" + 
+	           		"Em 2008 o Grupo Ibmec Educacional S/A adquiriu a Metrocamp. Logo em 2009 o Grupo Ibemec fez a unificação das marcas IBTA, Imapes, Uirapuru e Metrocamp, formando a Veris Faculdades.\r\n" + 
+	           		"Em 2015 o grupo DeVry comprou 96,4% do Grupo Ibmec, essa foi uma aquisição de 700 milhões de reais. Em 2016 a faculdade já passou a se chamar DeVry Metrocamp.\r\n" + 
+	           		"Logo em 2018 o Grupo Devry Brasil mudou seu nome para Wyden Educacional, e então houve mais um vez a mudança de nome da faculdade para Centro Universitário UniMetrocamp Wyden. \r\n" + 
+	           		"Hoje a faculdade conta com mais de 6.000 alunos matriculados e oferece  mais de 60 cursos entre graduação e pós-graduação distribuídos entre cursos presenciais e à distância. ");
+	           
+	           System.out.println("------------");
+	           System.out.println("Digite [B] para sair   ");
+		       sair = in.next();
+	    	   }
 	           
 	       }
 	       public void hisalunos(){
@@ -223,3 +232,5 @@ public class Metodos {
 
 
 	}
+
+
