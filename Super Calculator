@@ -208,20 +208,7 @@ public class Metodos {
 	    	   System.out.println("-----Créditos-----");
 	           System.out.println("Rodolfo Rios RA: 1911515493");
 	           System.out.println("------------");	           
-	           System.out.println("Yasmim jaciara Teixeira Da Silva RA: 1911515487");
-	           System.out.println("------------");
-	           System.out.println("Felipe Silva do Carmo RA 1911514577");
-	           System.out.println("------------");
-	           System.out.println("Edmarcio Felipe Freitas Ribeiro RA 1911515398");
-	           System.out.println("------------");
-	           System.out.println("Felipe Alexandre Gonçales Cunha RA 1911514582");
-	           System.out.println("------------");
-	           System.out.println("Luiz Felipe Carvalho Caumo RA 1911514164");
-	           System.out.println("------------");
-	           System.out.println("Alexandre Felipe Massouh RA 1911513996");
-	           System.out.println("------------");
-	           System.out.println("Uliana Mavignier Paiva RA 1911514043");
-	           System.out.println("------------");
+	         
 	           System.out.println("Digite [B] para sair   ");
 		       sair = in.next();
 	           
